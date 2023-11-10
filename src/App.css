@@ -1,38 +1,65 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .App {
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #575756;
+  box-shadow: inset 0px 0px 0px 4px #ddd6e8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  background-color: #ddd6e8;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1, h2, ul, p {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 12px;
+}
+
+@media all and (max-width: 500px) {
+  li, h2 {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media all and (max-width: 900px) {
+  li, h2 {
+    text-align: center;
   }
 }
