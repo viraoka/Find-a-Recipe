@@ -5,9 +5,6 @@ import MyRecipesComponent from './MyRecipesComponent';
 
 
 
-//https://api.edamam.com/api/recipes/v2?type=public&q=avocado&app_id=7e869eeb&app_key=%20a79ad0ea2ebe7fb154454d865cc93a0b
-
-
 
 function App() {
 
