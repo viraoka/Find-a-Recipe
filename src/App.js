@@ -47,7 +47,10 @@ function App() {
 
       <div className='container'>
         <form onSubmit={finalSearch}>
-          <input className='search' onChange={myRecipeSearch} value={mySearch}/>
+          <input 
+          className='search' 
+          onChange={myRecipeSearch} 
+          value={mySearch}/>
         </form>
       </div>
 
@@ -63,7 +66,6 @@ function App() {
         image={element.recipe.image}
         type={element.recipe.cuisineType}
         mealType={element.recipe.mealType}
-        totalTime={element.recipe.totalTime}
         calories={element.recipe.calories}
         ingredients={element.recipe.ingredientLines}
         />

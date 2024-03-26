@@ -1,4 +1,4 @@
-function MyRecipesComponent({label, image, type, mealType, totalTime, calories, ingredients}) {
+function MyRecipesComponent({label, image, type, mealType, calories, ingredients}) {
     return(
         <div>
             <div className="container">
@@ -14,12 +14,8 @@ function MyRecipesComponent({label, image, type, mealType, totalTime, calories, 
                 <p>{mealType}</p>
             </div>
             <div className="container">
-                <p>Cooking time: {totalTime} min</p>
-            </div>
-            <div className="container">
                 <p>{calories.toFixed()} calories</p>
             </div>
-
             <ul className="container list">
                 {ingredients.map((ingredient, index) => (
                     <li key={index}>
