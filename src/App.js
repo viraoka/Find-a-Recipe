@@ -14,7 +14,7 @@ function App() {
 
   const [mySearch, setMySearch] = useState("");
   const [myRecipes, setMyRecipes] = useState([]);
-  const [wordSubmitted, setWordSubmitted] = useState("apple")
+  const [wordSubmitted, setWordSubmitted] = useState("berry")
 
 
 
